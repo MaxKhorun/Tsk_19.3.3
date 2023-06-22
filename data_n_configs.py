@@ -1,17 +1,15 @@
-status = 'available'
+base_url = 'petstore.swagger.io/v2'
+api_key = 'test_api_22_06_2023'
+status = {'available': 'available',
+          'pending': 'pending',
+          'sold': 'sold'}
 headers = {'accept': 'application/json',
            'Content-Type': 'application/json'}
-base_url = 'petstore.swagger.io/v2'
-
-id_pet = 9223372036854774433
-
-get_params = {
-    'status' : 'available'
-}
-
+del_headers = {'accept': 'application/json',
+               'api_key': api_key}
 'data'
 post_params = {
-  "id": 0,
+  "id": 345678876543,
   "category": {
     "id": 0,
     "name": "new_l"
@@ -30,7 +28,7 @@ post_params = {
 }
 
 put_params = {
-  "id": 0,
+  "id": 345678876543,
   "category": {
     "id": 0,
     "name": "new_l"
